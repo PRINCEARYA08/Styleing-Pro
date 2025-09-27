@@ -1,20 +1,92 @@
-div {
-    background-color: blue;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown
-}
-
-button {
-    font-size: 20px;
-    text-align: center;
-    background-color: aquamarine;
-}
+    div {}
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: brown
+    }
+    
+    button {
+        font-size: 20px;
+        text-align: center;
+        background-color: aquamarine;
+    }
+    
+    p {
+        font-size: 20px;
+        text-align: start;
+        color: rgb(0, 0, 0);
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+    }
+    
+    #h2 {
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    #h3 {
+        font-weight: 250;
+        text-align: center;
+    }
+    
+    #h4 {
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    #h5 {
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    #one {
+        font-size: 25px;
+    }
+    
+    #two {
+        font-size: 10px;
+    }
+    
+    #three {
+        font-size: 5px;
+    }
+    
+    #four {
+        font-size: 50px;
+    }
+    
+    #para {
+        line-height: 50px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    
+    #heading {
+        text-align: center;
+    }
+    
+    #par {
+        text-transform: capitalize;
+    }
+    
+    #paragraph {
+        font: times new roman;
+    }
+    
+    #outer {
+        font-size: 25px;
+    }
+    
+    #inner {
+        font-size: 5px;
+    }
