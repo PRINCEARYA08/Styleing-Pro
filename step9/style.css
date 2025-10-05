@@ -1,0 +1,110 @@
+    body {
+        text-align: center;
+    }
+    
+    div {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        border: black 2px solid;
+    }
+    
+    #section1 {
+        height: 20px;
+        width: 50px;
+        display: inline-block;
+        border: black 2px solid;
+    }
+    
+    #container {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #container2 {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    #container3 {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #container4 {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    #container5 {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    #container6 {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #container7 {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #container8 {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #container9 {
+        height: 200px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #box1 {
+        background-color: aqua;
+    }
+    
+    #box2 {
+        background-color: pink;
+    }
+    
+    #box3 {
+        background-color: orange;
+    }
+    
+    #box4 {
+        background-color: yellow;
+    }
+    
+    #box5 {
+        background-color: green;
+    }
