@@ -26,5 +26,21 @@
         position: fixed;
         bottom: 0;
         top: 0;
-        width: 100%;
+        left: 100px;
+        width: 20%;
+    }
+    
+    body {
+        background-image: url(see_photo.jpg);
+        background-size: cover;
+    }
+    
+    #container1 {
+        background-image: url(see_photo.jpg);
+        background-size: cover;
+    }
+    
+    #container2 {
+        background-image: url(chri_photo.jpg);
+        background-size: cover;
     }
