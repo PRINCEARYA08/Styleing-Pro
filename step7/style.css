@@ -44,3 +44,49 @@
         background-image: url(chri_photo.jpg);
         background-size: cover;
     }
+    /*     div {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border: black 2px solid;
+        display: inline-block;
+    }
+    
+    #box1 {
+        position: static;
+    }
+    
+    #box2 {
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+    
+    #box3 {
+        position: absolute;
+        top: 110px;
+        left: 390px;
+    }
+    
+    #box4 {
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 100px;
+        width: 20%;
+    }
+    
+    body {
+        background-image: url(see_photo.jpg);
+        background-size: cover;
+    }
+    
+    #container1 {
+        background-image: url(see_photo.jpg);
+        background-size: cover;
+    }
+    
+    #container2 {
+        background-image: url(chri_photo.jpg);
+        background-size: cover;
+    } */
