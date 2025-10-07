@@ -1,0 +1,74 @@
+#div1 {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: black 2px solid;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    transform: rotate(145deg);
+    transition-duration: 2s;
+    transition-property: all;
+}
+
+#div1:hover {
+    background-color: red;
+    transform: translateY(-200px);
+}
+
+#div2 {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: black 2px solid;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    animation-name: colorAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    /* animation-timing-function: ease-in; */
+}
+
+@keyframes colorAnimation {
+    from {
+        background-color: aqua;
+    }
+    to {
+        background-color: red;
+    }
+}
+
+#div2:hover {}
+
+#div3 {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: black 2px solid;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    animation-name: colorAnimation;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease-in; */
+}
+
+@keyframes colorAnimation {
+    from {
+        background-color: aqua;
+    }
+    to {
+        background-color: red;
+    }
+}
+
+
+/*  
+ 
+ 
+ */
+
+
+/* */
