@@ -1,0 +1,74 @@
+        div {
+            display: inline-block;
+        }
+        
+        #div1 {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: black 2px solid;
+        }
+        
+        #div1:hover {
+            background-color: red;
+        }
+        
+        #div2:active {
+            background-color: rgb(184, 115, 169);
+        }
+        
+        #div2 {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: black 2px solid;
+            display: inline-block;
+        }
+        
+        #div3 {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: black 2px solid;
+            display: inline-block;
+            transition-duration: 2s;
+            transition-property: all;
+        }
+        
+        #div3:hover {
+            background-color: red;
+            font-size: 20px;
+        }
+        
+        #div4 {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: black 2px solid;
+            display: inline-block;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: steps(4);
+        }
+        
+        #div4:hover {
+            background-color: red;
+            font-size: 20px;
+        }
+        
+        #div5 {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: black 2px solid;
+            display: inline-block;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: steps(4);
+            transition-delay: 1s;
+        }
+        
+        #div5:hover {
+            background-color: red;
+            font-size: 20px;
+        }
