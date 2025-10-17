@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: rgb(255, 251, 251);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Home {
+    height: 500px;
+    width: 100%;
+    background-color: lightgray;
+}
