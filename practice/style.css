@@ -18,3 +18,15 @@
     width: 100%;
     background-color: lightgray;
 }
+
+#chari {
+    height: 300px;
+    width: 250px;
+    background-color: brown;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    border-radius: 150px;
+    border: solid black 5px;
+    background-size: cover;
+}
