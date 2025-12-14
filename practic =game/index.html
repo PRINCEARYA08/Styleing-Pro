@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .game-container {
+            background: #ffffff;
+            width: 350px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        
+        .options {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        
+        .options button {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #667eea;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .options button:hover {
+            background: #5a67d8;
+        }
+        
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .correct {
+            color: green;
+        }
+        
+        .wrong {
+            color: red;
+        }
+        
+        .reset-btn {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #764ba2;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .reset-btn:hover {
+            background: #6b46c1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="game-container">
+        <h1>🎯 Guess the Number</h1>
+        <p>Select difficulty and guess the number</p>
+
+        <select id="level" onchange="startGame()">
+      <option value="">Select Difficulty</option>
+      <option value="easy">Easy (1–4)</option>
+      <option value="medium">Medium (1–6)</option>
+      <option value="hard">Hard (1–8)</option>
+    </select>
+
+        <div class="options" id="options"></div>
+
+        <div class="result" id="result"></div>
+
+        <button class="reset-btn" onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <script>
+        let correctNumber = null;
+
+        function startGame() {
+            const level = document.getElementById("level").value;
+            const optionsDiv = document.getElementById("options");
+            optionsDiv.innerHTML = "";
+            document.getElementById("result").innerText = "";
+
+            let max;
+            if (level === "easy") max = 4;
+            else if (level === "medium") max = 6;
+            else if (level === "hard") max = 8;
+            else return;
+
+            correctNumber = Math.floor(Math.random() * max) + 1;
+
+            for (let i = 1; i <= max; i++) {
+                const btn = document.createElement("button");
+                btn.innerText = i;
+                btn.onclick = () => checkGuess(i);
+                optionsDiv.appendChild(btn);
+            }
+        }
+
+        function checkGuess(num) {
+            const result = document.getElementById("result");
+            if (num === correctNumber) {
+                result.innerHTML = "🎉 Correct Guess!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "❌ Wrong Guess! Try Again.";
+                result.className = "result wrong";
+            }
+        }
+
+        function resetGame() {
+            document.getElementById("level").value = "";
+            document.getElementById("options").innerHTML = "";
+            document.getElementById("result").innerText = "";
+        }
+    </script>
+
+</body>
+
+</html>
