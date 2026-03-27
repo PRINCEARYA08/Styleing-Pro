@@ -15,21 +15,6 @@ A personal playground to learn and practice **CSS styling**—layouts, colors, t
 
 ---
 
-## Folder structure (example)
-
-```text
-YOUR_REPO_NAME/
-├─ index.html
-├─ styles/
-│  └─ style.css
-├─ projects/
-│  ├─ buttons/
-│  ├─ cards/
-│  └─ navbar/
-└─ assets/
-   └─ images/
-```
-
 > Update this section to match your real files.
 
 ---
