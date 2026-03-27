@@ -15,10 +15,6 @@ A personal playground to learn and practice **CSS styling**—layouts, colors, t
 
 ---
 
-> Update this section to match your real files.
-
----
-
 ## How to run
 
 ### Option 1: Open directly
